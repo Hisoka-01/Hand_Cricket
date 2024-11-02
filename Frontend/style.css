@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+
+/* Utility Tools */
+.border-sample {
+    border: 2px solid black;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+/* Main Codespace */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Pause Button */
+.pause {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    /* border: 2px solid black; */
+}
+
+.pause div {
+    font-family: "Potta One", system-ui;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 10px 150px;
+    border: .15em solid black;
+    border-top: 0;
+    border-radius: 0 0 13px 13px;
+    background: rgb(155, 155, 155);
+}
+
+.gamespace {
+    margin-top: 10vh;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40vw;
+    grid-row-gap: 4vh;
+}
+
+.items {
+    border: 3px solid lightgreen;
+    background: lightcoral;
+    border-radius: 3px;
+    width: 30vw;
+}
+
+.score {
+    height: 6vh;
+}
+
+.signs {
+    height: 40vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
