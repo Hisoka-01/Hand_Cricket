@@ -6,13 +6,19 @@
     border: 2px solid black;
 }
 
-.bl-0 {
-    border-left: 0;
+.items {
+    border: 3px solid lightgreen;
+    background: lightcoral;
+    border-radius: 3px;
+    width: 30vw;
 }
 
-.br-0 {
-    border-right: 0;
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /* Main Codespace */
 * {
@@ -41,37 +47,110 @@
     background: rgb(155, 155, 155);
 }
 
-.gamespace {
+/* Player Names */
+.playername {
+    margin-top: 5vh;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5vw;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+
+/* HandSigns Space */
+.handsigns {
     margin-top: 10vh;
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
     padding-right: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 40vw;
-    grid-row-gap: 4vh;
-}
-
-.items {
-    border: 3px solid lightgreen;
-    background: lightcoral;
-    border-radius: 3px;
-    width: 30vw;
-}
-
-.score {
-    height: 6vh;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-column-gap: 5vw;
 }
 
 .signs {
-    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 }
 
+.chatBOX {
+    height: 25vh;
+    margin-top: 11vh;
+}
 
+/* Input BOX */
+.inputBox {
+    margin-top: 2vh;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    /* width: 30vw; */
+}
 
+.number {
+    border: 3px solid lightseagreen;
+    background: lightcyan;
+    height: 10vh;
+    width: 6vw;
+    margin: 0% 1%;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.img {
+    width: 70px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
+.logoOne {
+    transform: rotateZ(-90deg);
+    height: 13vh;
+    /* width: 10vw; */
+}
+
+.logoTwo {
+    transform: rotateZ(-90deg);
+    height: 14vh;
+}
+
+.logoThree {
+    transform: rotateZ(-90deg);
+    height: 13vh;
+}
+
+.logoFour {
+    transform: rotateZ(-90deg);
+    height: 13vh;
+}
+
+.logoFive {
+    transform: rotateZ(-90deg);
+    height: 14vh;
+}
+
+.logoSix {
+    height: 13vh;
+    width: 21vh;
+}
 
 
 
