@@ -47,6 +47,11 @@
     background: rgb(155, 155, 155);
 }
 
+.pause img {
+    height: 8vh;
+    width: 2vw;
+}
+
 /* Player Names */
 .playername {
     margin-top: 5vh;
@@ -83,6 +88,13 @@
     justify-content: center;
     align-items: center;
     height: 50vh;
+    background: rgb(244 244 244);
+}
+
+.handSigns1 {
+    border: 1px solid #bdbdbd;
+    box-shadow: 0px 7px 50px 0px #c2c2c2;
+    border-radius: 0px 20px 20px 0px;
 }
 
 .chatBOX {
