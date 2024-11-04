@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+
+/* Utility Tools */
+.border-sample {
+    border: 2px solid black;
+}
+
+.items {
+    border: 3px solid lightgreen;
+    background: lightcoral;
+    border-radius: 3px;
+    width: 30vw;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Main Codespace */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Pause Button */
+.pause {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    /* border: 2px solid black; */
+}
+
+.pause div {
+    font-family: "Potta One", system-ui;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 10px 150px;
+    border: .15em solid black;
+    border-top: 0;
+    border-radius: 0 0 13px 13px;
+    background: rgb(155, 155, 155);
+}
+
+.pause img {
+    height: 8vh;
+    width: 2vw;
+}
+
+/* Player Names */
+.playername {
+    margin-top: 5vh;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5vw;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+
+/* HandSigns Space */
+.handsigns {
+    margin-top: 10vh;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-column-gap: 5vw;
+}
+
+.signs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: rgb(244 244 244);
+}
+
+.handSigns1 {
+    border: 1px solid #bdbdbd;
+    box-shadow: 0px 7px 50px 0px #c2c2c2;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.chatBOX {
+    height: 25vh;
+    margin-top: 11vh;
+}
+
+/* Input BOX */
+.inputBox {
+    margin-top: 2vh;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    /* width: 30vw; */
+}
+
+.number {
+    border: 3px solid lightseagreen;
+    background: lightcyan;
+    height: 10vh;
+    width: 6vw;
+    margin: 0% 1%;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 70px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.logoOne {
+    transform: rotateZ(-90deg);
+    height: 13vh;
+    /* width: 10vw; */
+}
+
+.logoTwo {
+    transform: rotateZ(-90deg);
+    height: 14vh;
+}
+
+.logoThree {
+    transform: rotateZ(-90deg);
+    height: 13vh;
+}
+
+.logoFour {
+    transform: rotateZ(-90deg);
+    height: 13vh;
+}
+
+.logoFive {
+    transform: rotateZ(-90deg);
+    height: 14vh;
+}
+
+.logoSix {
+    height: 13vh;
+    width: 21vh;
+}
+
+
+
+
+
+
+
+
