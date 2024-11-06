@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
 
 
+
+
+
 /* Utility Tools */
 .border-sample {
     border: 2px solid black;
@@ -20,13 +23,21 @@
 }
 
 
+
+
 /* Main Codespace */
-* {
+body {
+    background-image: url('bg1V1.jpg');
+    background-size: cover;      /* Adjusts image to cover the whole screen */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    /* opacity: 10px; */
     margin: 0;
     padding: 0;
-    /* background-image: url('bg1V1.jpg'); */
-    /* background: lightsalmon; */
 }
+
+
+
+
 
 /* Pause Button */
 .pause {
@@ -53,6 +64,10 @@
     height: 8vh;
     width: 2vw;
 }
+
+
+
+
 
 /* Player Names */
 .playername {
@@ -99,6 +114,10 @@
 
 }
 
+
+
+
+
 /* HandSigns Space */
 .handsigns {
     margin-top: 10vh;
@@ -125,29 +144,110 @@
     border-radius: 0px 20px 20px 0px;
 }
 
-.handSigns1 img {
-    transform: rotateY(180deg) rotateZ(-90deg);
-    height: 60vh;
-    width: 25vw;
-    margin-left: -5vw;
-}
-
 .handSigns2 {
     border: 1px solid #bdbdbd;
     box-shadow: 0px 7px 50px 0px #c2c2c2;
     border-radius: 20px 0px 0px 20px;
 }
 
-.handSigns2 img {
-    height: 62vh;
-    width: 42vw;
-    margin-right: -4vw;
-}
-
 .chatBOX {
     height: 25vh;
     margin-top: 11vh;
 }
+
+
+
+
+
+/* Hand SIGNS for both left and right */
+
+.leftONE {
+    transform: rotateY(180deg) rotateZ(-90deg);
+    height: 60vh;
+    width: 25vw;
+    margin-left: -4vw;
+}
+
+.rightONE {
+    transform: rotateZ(-90deg);
+    height: 60vh;
+    width: 25vw;
+    margin-right: -4vw;
+}
+
+.leftTWO {
+    transform: rotateY(180deg) rotateZ(-90deg);
+    height: 60vh;
+    width: 25vw;
+    margin-left: -6vw;
+}
+
+.rightTWO {
+    transform: rotateZ(-90deg);
+    height: 60vh;
+    width: 25vw;
+    margin-right: -6vw;
+}
+
+.leftTHREE {
+    transform: rotateY(180deg) rotateZ(-90deg);
+    height: 60vh;
+    width: 25vw;
+    margin-left: -3vw;
+}
+
+.rightTHREE {
+    transform: rotateZ(-90deg);
+    height: 60vh;
+    width: 25vw;
+    margin-right: -3vw;
+}
+
+.leftFOUR {
+    transform: rotateY(180deg) rotateZ(-90deg);
+    height: 60vh;
+    width: 17vw;
+    margin-left: -5vw;
+}
+
+.rightFOUR {
+    transform: rotateZ(-90deg);
+    height: 60vh;
+    width: 17vw;
+    margin-right: -5vw;
+}
+
+.leftFIVE {
+    transform: rotateY(180deg) rotateZ(-90deg);
+    height: 60vh;
+    width: 23vw;
+    margin-left: -5vw;
+}
+
+.rightFIVE {
+    transform: rotateZ(-90deg);
+    height: 60vh;
+    width: 23vw;
+    margin-right: -5vw;
+}
+
+.leftSIX {
+    transform: rotateY(180deg);
+    height: 60vh;
+    width: 33vw;
+    margin-left: -5vw;
+}
+
+.rightSIX {
+    height: 60vh;
+    width: 33vw;
+    margin-right: -4vw;
+}
+
+
+
+
+
 
 /* Input BOX */
 .inputBox {
