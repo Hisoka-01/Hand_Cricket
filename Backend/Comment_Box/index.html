@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box</title>
+    <style>
+        .container {
+            display: grid;
+            place-items: center;
+            height: 100vh; /* Full viewport height */
+            list-style: none;
+        }
+        .chatbox{
+            border: 3px solid lightgreen;
+            background: lightcoral;
+            border-radius: 3px;
+            width: 30vw;
+            height: 25vh;
+            overflow-y: scroll; /* Enable vertical scrolling */
+            position: fixed;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .input-box{
+             position: fixed; 
+        } 
+        #messages{
+            list-style-type: none;
+        }
+        #message-list li {
+            margin-bottom: 10px; /* Adjust spacing between messages */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chatbox">
+            <ul id="messages">
+                <!-- messages -->
+            </ul>
+            <div class="input-box">
+                <form id="form" action="">
+                    <input id="input" type="text" autocomplete="off" placeholder="Send messages">
+                    <button type="submit">Send</button>
+                    <button id="toggle-btn">Disconnect</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        let retCounter = 0;
+
+        const socket = io({
+            auth: {
+                serverOffSet: 0
+            }
+        });
+
+        const form = document.getElementById("form");
+        const input = document.getElementById("input");
+        const messages = document.getElementById('messages');
+        const toggleButton = document.getElementById('toggle-btn');
+        var counter = -1;
+
+        form.addEventListener('submit', (e)=>{
+            e.preventDefault();
+            if (input.value) {
+                socket.emit('chat message', input.value, socket.auth.serverOffSet);
+                input.value ="";
+            };
+        });
+
+        toggleButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (socket.connected) {
+            toggleButton.innerText = 'Connect';
+            socket.disconnect();
+        } else {
+            toggleButton.innerText = 'Disconnect';
+            socket.connect();
+        }
+        });
+
+        socket.on('chat message', (msg, serverOffSet)=>{
+            const item = document.createElement('li');
+            item.textContent = "Player 1: "+msg;
+            messages.appendChild(item);
+            // Scroll to bottom aint working
+            window.scrollTo(0, document.body.scrollHeight);
+            socket.auth.serverOffset = serverOffSet;
+        })
+    </script>
+</body>
+</html>
