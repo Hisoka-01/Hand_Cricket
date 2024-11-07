@@ -28,8 +28,10 @@
 /* Main Codespace */
 body {
     background-image: url('bg1V1.jpg');
-    background-size: cover;      /* Adjusts image to cover the whole screen */
-    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    background-size: cover;
+    /* Adjusts image to cover the whole screen */
+    background-attachment: fixed;
+    /* Keeps the background fixed when scrolling */
     /* opacity: 10px; */
     margin: 0;
     padding: 0;
@@ -44,25 +46,75 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 6vh;
     /* border: 2px solid black; */
 }
 
 .pause div {
     font-family: "Potta One", system-ui;
-    font-size: 2.5rem;
-    font-weight: 800;
+    font-size: 1.05rem;
+    font-weight: 400;
     margin: 0;
-    padding: 10px 150px;
+    padding: 0% 2%; /* 10px 150px; */
     border: .15em solid black;
     border-top: 0;
     border-radius: 0 0 13px 13px;
-    background: rgb(155, 155, 155);
+    background: rgb(208 208 208);/*rgb(155, 155, 155);*/
 }
 
 .pause img {
     height: 8vh;
     width: 2vw;
+}
+
+/* Container for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown button */
+.dropdown-button {
+    background-color: rgb(208 208 208);
+    /* color: white; */
+    padding: 5px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    /* display: none; */
+    /* Hide the dropdown by default */
+    position: absolute;
+    left: 4%;
+    background-color: #f1f1f1;
+    /* max-width: 160px; */
+    width: 8vw;
+    height: 21vh;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10% 28%;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
@@ -153,6 +205,7 @@ body {
 .chatBOX {
     height: 25vh;
     margin-top: 11vh;
+    overflow-y: scroll;
 }
 
 
@@ -310,11 +363,3 @@ body {
     height: 13vh;
     width: 21vh;
 }
-
-
-
-
-
-
-
-
