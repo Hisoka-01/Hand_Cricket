@@ -27,9 +27,11 @@
 
 /* Main Codespace */
 body {
-    background-image: url('bg1V1.jpg');
+    background-image: url('bg1v1.jpg');
     background-size: cover;
     /* Adjusts image to cover the whole screen */
+    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     /* Keeps the background fixed when scrolling */
     /* opacity: 10px; */
@@ -60,6 +62,7 @@ body {
     border-top: 0;
     border-radius: 0 0 13px 13px;
     background: rgb(208 208 208);/*rgb(155, 155, 155);*/
+    z-index: 1;
 }
 
 .pause img {
@@ -82,11 +85,12 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 4px;
+    z-index: 3;
 }
 
 /* Style for the dropdown content */
 .dropdown-content {
-    /* display: none; */
+    display: none;
     /* Hide the dropdown by default */
     position: absolute;
     left: 4%;
@@ -96,7 +100,7 @@ body {
     height: 21vh;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    z-index: 1;
+    z-index: 5;
 }
 
 /* Links inside the dropdown */
@@ -116,7 +120,7 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+  
 
 
 
@@ -159,11 +163,11 @@ body {
 
 .versus {
     border: 0px;
-    background: white;
+    background: transparent;
     font-family: "Potta One", system-ui;
+    color: #F5DEB3;
     font-size: 2rem;
     font-weight: 600;
-
 }
 
 
@@ -187,26 +191,38 @@ body {
     justify-content: center;
     align-items: center;
     height: 50vh;
-    background: rgb(244 244 244);
+    width: 30vw;
 }
 
 .handSigns1 {
-    border: 1px solid #bdbdbd;
+    /* border: 1px solid #bdbdbd;
     box-shadow: 0px 7px 50px 0px #c2c2c2;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 20px 20px 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 30vw;
+    background: transparent;
 }
 
 .handSigns2 {
-    border: 1px solid #bdbdbd;
+    /* border: 1px solid #bdbdbd;
     box-shadow: 0px 7px 50px 0px #c2c2c2;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 0px 0px 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 30vw;
+    background: transparent;
 }
 
-.chatBOX {
+/* .chatBOX {
     height: 25vh;
     margin-top: 11vh;
     overflow-y: scroll;
-}
+} */
 
 
 
