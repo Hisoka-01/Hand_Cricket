@@ -22,40 +22,54 @@
 
     <!-- Player Names And Scores -->
     <div class="playername container text-center">
-        <div class="items score player1 border-start-0">Player 1</div>
-        <div class="items score versus">V/S</div>
-        <div class="items score player2 border-end-0">Player 2</div>
+        <div class="items player1 border-start-0">
+            <img src="bat_logo.jpg" alt="bat" id="logoPlayer1" class="bat_bowl">
+            Player 1
+        </div>
+        <div class="items score versus">
+            <div class="versusFirstline">
+                <p>{Runs}/{Wicket}</p>
+                <p>{Over}</p>
+            </div>
+            <div class="versusSecondline">
+                <p>Target: {target} runs</p>
+            </div>
+        </div>
+        <div class="items player2 border-end-0">
+            Player 2
+            <img src="ball_logo.jpg" alt="bowl" id="logoPlayer2" class="bat_bowl">
+        </div>
     </div>
 
     <!-- Player Hand Signs -->
     <div class="handsigns container text-center">
-        <div class="signs handSigns1 border-start-0"><img src="five.png" alt="" class="leftFIVE"></div>
+        <div class="signs handSigns1 border-start-0"><img src="four.png" alt="" id="signsImg1" class="leftFOUR"></div>
            <!-- CHATBOX -->
         <div class="items signs chatBOX">
             chatBOX
         </div>
-        <div class="signs handSigns2 border-end-0"><img src="five.png" alt="" class="rightFIVE"></div>
+        <div class="signs handSigns2 border-end-0"><img src="six.png" alt="" id="signsImg2" class="rightSIX"></div>
     </div>
 
     <!-- Input Area -->
     <div class="inputBox">
         <div id="one" class="number">
-            <img src="one.png" alt="One" class="img logoOne">
+            <img src="one.png" alt="One" class="logo logoOne">
         </div>
         <div id="two" class="number">
-            <img src="two.png" alt="Two" class="img logoTwo">
+            <img src="two.png" alt="Two" class="logo logoTwo">
         </div>
         <div id="three" class="number">
-            <img src="three.png" alt="Three" class="img logoThree">
+            <img src="three.png" alt="Three" class="logo logoThree">
         </div>
         <div id="four" class="number">
-            <img src="four.png" alt="Four" class="img logoFour">
+            <img src="four.png" alt="Four" class="logo logoFour">
         </div>
         <div id="five" class="number">
-            <img src="five.png" alt="Five" class="img logoFive">
+            <img src="five.png" alt="Five" class="logo logoFive">
         </div>
         <div id="six" class="number">
-            <img src="six.png" alt="Six" class="img logoSix">
+            <img src="six.png" alt="Six" class="logo logoSix">
         </div>
     </div>
 

@@ -138,16 +138,23 @@ body {
 }
 
 .score {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6vh;
     font-family: "Potta One", system-ui;
     font-size: 1.5rem;
     font-weight: 400;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid cyan;
+    background: lightcyan;
+    box-shadow: 0px 7px 20px 0px #67c7c7;
 }
 
 .player1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 10vh;
+    font-family: "Potta One", system-ui;
+    font-size: 1.5rem;
+    font-weight: 400;
     border-radius: 0px 20px 20px 0px;
     border: 1px solid cyan;
     background: lightcyan;
@@ -155,19 +162,70 @@ body {
 }
 
 .player2 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 10vh;
+    font-family: "Potta One", system-ui;
+    font-size: 1.5rem;
+    font-weight: 400;
     border-radius: 20px 0px 0px 20px;
     border: 1px solid cyan;
     background: lightcyan;
     box-shadow: 0px 7px 20px 0px #67c7c7;
 }
 
+.bat_bowl {
+    width: 3vw;
+    height: 5vh;
+    margin: 0 4%;
+    border-radius: 50%;
+    border: 2px solid rgb(210, 47, 239);
+}
+
+/* #logoPlayer1 {
+}
+
+#logoPlayer2 {
+} */
+
 .versus {
-    border: 0px;
-    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 0px; */
+    /* background: transparent; */
     font-family: "Potta One", system-ui;
-    color: #F5DEB3;
-    font-size: 2rem;
-    font-weight: 600;
+    color: #0edaae;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+.versusFirstline {
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+}
+
+
+
+/* Keyframes */
+@keyframes slideLeft {
+    from {
+        margin-left: -80vw;
+    }
+    to{
+        margin-left: -4vw;
+    }
+}
+@keyframes slideRight {
+    from {
+        margin-right: -80vw;
+    }
+    to{
+        margin-right: -4vw;
+    }
 }
 
 
@@ -235,6 +293,7 @@ body {
     height: 60vh;
     width: 25vw;
     margin-left: -4vw;
+    animation: slideLeft 1s forwards;
 }
 
 .rightONE {
@@ -242,6 +301,7 @@ body {
     height: 60vh;
     width: 25vw;
     margin-right: -4vw;
+    animation: slideRight 1s forwards;
 }
 
 .leftTWO {
@@ -342,7 +402,7 @@ body {
     align-items: center;
 }
 
-.img {
+.logo {
     width: 70px;
     height: auto;
     display: block;
