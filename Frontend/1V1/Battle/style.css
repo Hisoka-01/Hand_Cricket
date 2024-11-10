@@ -208,6 +208,9 @@ body {
     width: 83%;
 }
 
+.versusFirstline p:hover, .versusSecondline p:hover {
+    color: rgb(5, 164, 129);
+}
 
 
 /* Keyframes */
@@ -400,6 +403,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.number:hover {
+    background: rgb(100, 255, 255);
+}
+.number:active {
+    background: rgb(3, 141, 141);
 }
 
 .logo {
