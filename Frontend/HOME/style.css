@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Indie+Flower&family=Potta+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    height: 75vh;
+    background: #ffec99;
+    border-bottom: 3px solid #f08c00;
+}
+
+.logoAndName {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    padding: 1% 2%;
+}
+
+.logoWebsite {
+    height: 7vh;
+    width: 5vw;
+}
+
+.titleName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Indie Flower", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2rem;
+    color: #f08c00;
+    margin-left: 3vw;
+}
+
+
+
+
+
+
