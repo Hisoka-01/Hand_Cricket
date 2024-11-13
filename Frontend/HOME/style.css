@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Indie+Flower&family=Potta+One&display=swap');
 
+@font-face {
+    font-family: "Virgil";
+    src: url("Virgil.woff2");
+    font-display: swap;
+}
+
+/* UNIVERSAL CSS*/
 body {
     margin: 0;
     padding: 0;
+    font-family: "Virgil";
+    color: #f08c00;
 }
 
+/* Navbar */
 header {
     display: flex;
     height: 75vh;
@@ -28,12 +38,31 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Indie Flower", cursive;
     font-weight: 800;
     font-style: normal;
     font-size: 2rem;
     color: #f08c00;
     margin-left: 3vw;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-left: 21vw;
+}
+
+li{
+    list-style: none;
+    padding-left: 2vw;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+ul li signing {
+    padding-left: 1.5vw;
 }
 
 
