@@ -17,9 +17,14 @@ body {
 /* Navbar */
 header {
     display: flex;
-    height: 75vh;
-    background: #ffec99;
-    border-bottom: 3px solid #f08c00;
+    height:75vh;
+    /* background: #ffec99; */
+    background-image: url('Slide5.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border-bottom: 3px solid #f08c00; */
+    position: relative;
 }
 
 .logoAndName {
@@ -61,9 +66,49 @@ li{
     font-size: 1rem;
 }
 
-ul li signing {
-    padding-left: 1.5vw;
+.signing div {
+    border: 3px solid #f08c00;
+    padding: 5px 10px;
+    border-radius: 9%;
 }
+
+.custom-shape-divider-bottom-1731644460 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1731644460 svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1731644460 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
