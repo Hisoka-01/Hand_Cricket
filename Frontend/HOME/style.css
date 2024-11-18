@@ -69,6 +69,9 @@ header {
     margin-left: 21vw;
     position: absolute;
     right: 1vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1% 2%;
 }
 
 li{
@@ -119,6 +122,7 @@ li{
     position: relative;
     display: none;
 }
+
 .dropdown-list {
     list-style: none;
     border: 3px solid rgb(240, 140, 0);
@@ -127,7 +131,7 @@ li{
     position: absolute;
     top: 6vh;
     right: 0;
-    width: 97vw;
+    width: 94vw;
     display: none;
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
@@ -141,7 +145,17 @@ li{
     font-weight: 300;
     font-size: 1rem;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 1100px) and (min-width: 600px) {
+    .dropdown {
+        display: block;
+    }
+    
+    .home, .aboutUs, .tournaments, .updates, .contactUs, .miniSeperator {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 400px) {
     .dropdown {
         display: block;
     }
@@ -156,15 +170,76 @@ li{
         color: #f08c00;
         margin-left: 0;
     }
-    .logoWebsite {
-        height: 7vh;
-        width: 5vw;
+}
+
+@media screen and (max-width: 400px) and (min-width: 0px) {
+    .dropdown {
+        display: block;
     }
-    .navbar {
-        margin-top: 0;
-        margin-bottom: 0;
+    
+    .home, .aboutUs, .tournaments, .updates, .contactUs, .miniSeperator {
+        display: none;
+    }
+    .titleName {
+        font-weight: 600;
+        font-style: normal;
+        font-size: 19px;
+        color: #f08c00;
+        margin-left: 0;
+    }
+    .signing div {
+        border: 2px solid #f08c00;
+        padding: 3px 5px;
+        border-radius: 5%;
+    }
+    .dropdown-btn {
+        width: 31;
+        height: 15;
+    }
+    .dropdown-btn rect {
+        width: 31;
+        height: 12;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
