@@ -1,4 +1,4 @@
-let list = document.getElementsByClassName('dropdown-list');
+let list = document.getElementById('dropdownList');
 
 function toggleMenu() {
     list.classList.toggle('toggling');

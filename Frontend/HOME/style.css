@@ -114,11 +114,11 @@ li{
 
 
 
-/* DROPDOWN */
+/* DROPDOWN only for screen less than 420px */
 .dropdown {
     position: relative;
+    display: none;
 }
-
 .dropdown-list {
     list-style: none;
     border: 3px solid rgb(240, 140, 0);
@@ -128,19 +128,42 @@ li{
     top: 6vh;
     right: 0;
     width: 97vw;
-    /* display: none; */
+    display: none;
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 .toggling {
     display: block;
 }
-
 .dropdown li {
     padding: 1vh 0;
     color: rgb(240, 100, 0);
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 300;
     font-size: 1rem;
+}
+@media screen and (max-width: 420px) {
+    .dropdown {
+        display: block;
+    }
+    
+    .home, .aboutUs, .tournaments, .updates, .contactUs, .miniSeperator {
+        display: none;
+    }
+    .titleName {
+        font-weight: 600;
+        font-style: normal;
+        font-size: 19px;
+        color: #f08c00;
+        margin-left: 0;
+    }
+    .logoWebsite {
+        height: 7vh;
+        width: 5vw;
+    }
+    .navbar {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 
