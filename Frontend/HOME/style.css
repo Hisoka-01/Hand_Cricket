@@ -45,8 +45,8 @@ header {
 }
 /* LOGO */
 .logoWebsite {
-    height: 7vh;
-    width: 5vw;
+    width: auto;
+    height: 10vh;
 }
 /* NAME */
 .titleName {
@@ -74,7 +74,7 @@ header {
     padding: 1% 2%;
 }
 
-li{
+.navbar li{
     list-style: none;
     margin-left: 2vw;
     font-weight: 200;
@@ -144,8 +144,22 @@ li{
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 300;
     font-size: 1rem;
+    margin-left: 0;
+    padding-left: 4vw;
 }
-@media screen and (max-width: 1100px) and (min-width: 600px) {
+
+.dropdown ul li:hover {
+    background: rgb(242, 255, 160);
+    color: red;
+}
+
+
+
+
+/* RESPONSIVENESS */
+
+/* 600 - 1000 */
+@media screen and (max-width: 1000px) and (min-width: 600px) {
     .dropdown {
         display: block;
     }
@@ -155,6 +169,7 @@ li{
     }
 }
 
+/* 400 - 600 */
 @media screen and (max-width: 600px) and (min-width: 400px) {
     .dropdown {
         display: block;
@@ -170,9 +185,15 @@ li{
         color: #f08c00;
         margin-left: 0;
     }
+    .logoWebsite {
+        width: auto;
+        height: 8vh;
+        margin-top: 0.5vh;
+    }
 }
 
-@media screen and (max-width: 400px) and (min-width: 0px) {
+/* 350 - 400 */
+@media screen and (max-width: 400px) and (min-width: 350px) {
     .dropdown {
         display: block;
     }
@@ -192,16 +213,40 @@ li{
         padding: 3px 5px;
         border-radius: 5%;
     }
-    .dropdown-btn {
-        width: 31;
-        height: 15;
-    }
-    .dropdown-btn rect {
-        width: 31;
-        height: 12;
+    .logoWebsite {
+        width: auto;
+        height: 8vh;
+        margin-top: 0.5vh;
     }
 }
 
+/* 0 - 350 */
+@media screen and (max-width: 350px) and (min-width: 0px) {
+    .dropdown {
+        display: block;
+    }
+    
+    .home, .aboutUs, .tournaments, .updates, .contactUs, .miniSeperator {
+        display: none;
+    }
+    .titleName {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: #f08c00;
+        margin-left: 0;
+    }
+    .signing div {
+        border: 2px solid #f08c00;
+        padding: 2px 3px;
+        border-radius: 3%;
+    }
+    .logoWebsite {
+        width: auto;
+        height: 6vh;
+        margin-top: 2vh;
+    }
+}
 
 
 
